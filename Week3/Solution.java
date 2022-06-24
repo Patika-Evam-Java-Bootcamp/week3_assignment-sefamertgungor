@@ -1,10 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-/*
- * Create the Student and Priorities classes here.
- */
-
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
@@ -38,7 +34,7 @@ class Priorities {
         PriorityQueue <Student> studentQueue = new PriorityQueue(Comparator.comparing(Student::getCgpa).reversed().thenComparing(Student::getName).thenComparing(Student::getId));
 
         List <Student> sentStudents = new ArrayList <Student>();
-///asdasfsdf
+
         String[] part;
         String name;
         int id;
