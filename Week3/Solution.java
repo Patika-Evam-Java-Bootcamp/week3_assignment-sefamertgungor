@@ -44,7 +44,7 @@ class Priorities {
 
         //Gelen event'leri tek tek geziyoruz ve her biri icin istenen islemleri   gerceklestiriyoruz.
         for (String e: events) {
-            //Bu kisimda gelen bir event'i bosluklara gore parcalara ayiriyoruz
+            //Bu kisimda gelen bir event'i partlara gore parcalara ayiriyoruz. Bunlar Part olarak kullanılmak uzere ataniyor.
             part = e.split(" ");
 
             //Gelen event "ENTER" ise student kuyruga ekleme islemi gerceklestiriliyor. Gelen event "SERVED" ise student kuyruktan cikariliyor.
