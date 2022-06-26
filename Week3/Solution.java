@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
+//Ogrenciler icin olusturulan sinif
 class Student {
     private int id;
     private String fname;
@@ -28,6 +29,7 @@ class Student {
     }
 }
 
+//Enter ve served islemlerinin yapilacaği sinif
 class Priorities {
     public List <Student> getStudents(List <String> events) {
 
@@ -76,12 +78,13 @@ public class Solution {
     public static void main(String[] args) {
         int totalEvents = Integer.parseInt(scan.nextLine());
         List<String> events = new ArrayList<>();
-
+        //Events kullanicidan aliniyor
         while (totalEvents-- != 0) {
             String event = scan.nextLine();
             events.add(event);
         }
-
+        //Eventleri metoda göndererek islemlerin gerceklestilmesi saglaniyor
+        //En son kalan ogrenciler yazdirilmak uzere donduruluyor
         List<Student> students = priorities.getStudents(events);
 
         if (students.isEmpty()) {
